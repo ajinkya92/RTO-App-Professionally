@@ -14,6 +14,7 @@
 		171F47FF215A87F700E2F6B3 /* ImageQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */; };
 		171F4801215A8C7500E2F6B3 /* TextQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */; };
 		171F4807215AC77A00E2F6B3 /* QuestionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F4806215AC77A00E2F6B3 /* QuestionDataService.swift */; };
+		171F4809215AD5A000E2F6B3 /* ImageQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F4808215AD5A000E2F6B3 /* ImageQuestionCell.swift */; };
 		1720538E215A635800E34884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538D215A635800E34884 /* AppDelegate.swift */; };
 		17205390215A635800E34884 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538F215A635800E34884 /* HomeVC.swift */; };
 		17205393215A635800E34884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17205391215A635800E34884 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestion.swift; sourceTree = "<group>"; };
 		171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestionCell.swift; sourceTree = "<group>"; };
 		171F4806215AC77A00E2F6B3 /* QuestionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataService.swift; sourceTree = "<group>"; };
+		171F4808215AD5A000E2F6B3 /* ImageQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestionCell.swift; sourceTree = "<group>"; };
 		1720538A215A635700E34884 /* RTO App Professionally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTO App Professionally.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1720538D215A635800E34884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1720538F215A635800E34884 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				17205391215A635800E34884 /* Main.storyboard */,
 				172053A9215A6DE700E34884 /* CategoryCell.swift */,
 				171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */,
+				171F4808215AD5A000E2F6B3 /* ImageQuestionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,10 +264,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171F4809215AD5A000E2F6B3 /* ImageQuestionCell.swift in Sources */,
 				17205390215A635800E34884 /* HomeVC.swift in Sources */,
 				1720538E215A635800E34884 /* AppDelegate.swift in Sources */,
 				172053A5215A692400E34884 /* Category.swift in Sources */,
@@ -439,10 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YCPFBKZL7W;
 				INFOPLIST_FILE = "RTO App Professionally/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ajinkyasonar.RTO-App-Professionally";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -458,10 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YCPFBKZL7W;
 				INFOPLIST_FILE = "RTO App Professionally/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ajinkyasonar.RTO-App-Professionally";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

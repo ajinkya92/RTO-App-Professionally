@@ -8,9 +8,11 @@
 
 import Foundation
 
+typealias ImageQuestionElement = [ImageQuestion]
+
 struct ImageQuestion: Codable {
     
-    var image: String
-    var name: String
+    let image: String
+    let name: String
     
 }

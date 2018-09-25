@@ -16,6 +16,7 @@ class QuestionVC: UIViewController {
     let data = QuestionDataService.instance
     
     var textQuestionDataArray = TextQuestionElement()
+    var imageQuestionDataArray = ImageQuestionElement()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +24,13 @@ class QuestionVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getTextQuestionData()
+        getImageQuestionData()
         
     }
     
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         
-        if segmentControl.selectedSegmentIndex == 0 {
-            
-            getTextQuestionData()
-
-        } else {
-            
-            return
-        }
-        
+        tableView.reloadData()
         
     }
     
@@ -60,6 +54,20 @@ extension QuestionVC {
         
     }
     
+    func getImageQuestionData() {
+        
+        data.getImageQuestionData(url: IMAGEQUESTION_URL) { (ImageQuestionElement) in
+            
+            self.imageQuestionDataArray = ImageQuestionElement
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+        }
+        
+    }
+    
 }
 
 // MARK: TableView Method Implementation
@@ -68,26 +76,43 @@ extension QuestionVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return textQuestionDataArray.count
+        if segmentControl.selectedSegmentIndex == 0 {
+            return textQuestionDataArray.count
+        } else {
+            
+            return imageQuestionDataArray.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "TextQuestionCell") as? TextQuestionCell {
-            
+        if segmentControl.selectedSegmentIndex == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TextQuestionCell") as! TextQuestionCell
             let textData = textQuestionDataArray[indexPath.row]
-            
             cell.setupView(textQuestion: textData)
-            
             return cell
+        }
+        else {
             
-        } else {
-            
-            return UITableViewCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ImageQuestionCell") as! ImageQuestionCell
+            let imageData = imageQuestionDataArray[indexPath.row]
+            cell.setupView(imageQuestion: imageData)
+            return cell
         }
         
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if segmentControl.selectedSegmentIndex == 0 {
+            return UITableView.automaticDimension
+        } else {
+            return 150
+        }
+    }
+    
+    
     
 }
+
 

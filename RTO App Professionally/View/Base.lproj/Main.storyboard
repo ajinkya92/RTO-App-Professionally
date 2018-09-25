@@ -98,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Nnc-AN-TNV">
+                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nnc-AN-TNV">
                                 <rect key="frame" x="0.0" y="20" width="375" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="R8v-CN-TqP"/>
@@ -115,7 +115,7 @@
                                 <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextQuestionCell" rowHeight="111" id="Eqp-rT-OSq" customClass="TextQuestionCell" customModule="RTO_App_Professionally" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextQuestionCell" rowHeight="111" id="Eqp-rT-OSq" customClass="TextQuestionCell" customModule="RTO_App_Professionally" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eqp-rT-OSq" id="eYE-Vh-gbh">
@@ -163,6 +163,53 @@
                                             <outlet property="answerLbl" destination="efp-xl-3Bk" id="aIF-Lg-boN"/>
                                             <outlet property="cellView" destination="9nl-6G-0XC" id="fj3-p3-ty1"/>
                                             <outlet property="questionLbl" destination="sRr-On-bYJ" id="YQj-Ss-TNz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImageQuestionCell" rowHeight="151" id="lhI-6Q-Mbs" customClass="ImageQuestionCell" customModule="RTO_App_Professionally" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="139" width="375" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lhI-6Q-Mbs" id="dU8-dX-Vbi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u65-ef-kBj">
+                                                    <rect key="frame" x="10" y="10" width="355" height="130.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-ad-OSx">
+                                                            <rect key="frame" x="8" y="15.5" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="On1-aG-8gz"/>
+                                                                <constraint firstAttribute="height" constant="100" id="bhA-BN-TYq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signal Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdJ-gU-M9e">
+                                                            <rect key="frame" x="116" y="48" width="231" height="34.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.53725490196078429" green="0.53630631350000002" blue="0.53630631350000002" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="C4q-ad-OSx" firstAttribute="leading" secondItem="u65-ef-kBj" secondAttribute="leading" constant="8" id="3Su-s4-TY6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gdJ-gU-M9e" secondAttribute="trailing" constant="8" id="6Xf-9d-5Ze"/>
+                                                        <constraint firstItem="gdJ-gU-M9e" firstAttribute="centerY" secondItem="C4q-ad-OSx" secondAttribute="centerY" id="83Q-Rd-HuZ"/>
+                                                        <constraint firstItem="C4q-ad-OSx" firstAttribute="centerY" secondItem="u65-ef-kBj" secondAttribute="centerY" id="Efi-FD-WrB"/>
+                                                        <constraint firstItem="gdJ-gU-M9e" firstAttribute="leading" secondItem="C4q-ad-OSx" secondAttribute="trailing" constant="8" id="X2x-jn-LsR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="u65-ef-kBj" secondAttribute="bottom" constant="10" id="2fW-3o-61v"/>
+                                                <constraint firstAttribute="trailing" secondItem="u65-ef-kBj" secondAttribute="trailing" constant="10" id="Qt2-JP-4Aa"/>
+                                                <constraint firstItem="u65-ef-kBj" firstAttribute="top" secondItem="dU8-dX-Vbi" secondAttribute="top" constant="10" id="sUe-Jo-ZfX"/>
+                                                <constraint firstItem="u65-ef-kBj" firstAttribute="leading" secondItem="dU8-dX-Vbi" secondAttribute="leading" constant="10" id="uMd-Zo-OYz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="innerView" destination="u65-ef-kBj" id="6aq-zo-bDG"/>
+                                            <outlet property="questionImage" destination="C4q-ad-OSx" id="0OU-Jf-tZa"/>
+                                            <outlet property="questionImageName" destination="gdJ-gU-M9e" id="KAV-zX-jlI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
