@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171F47F7215A7AD200E2F6B3 /* TextQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */; };
+		171F47F9215A7B2300E2F6B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47F8215A7B2300E2F6B3 /* Constants.swift */; };
+		171F47FB215A7D1600E2F6B3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */; };
+		171F47FD215A856D00E2F6B3 /* SegmentControlExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47FC215A856D00E2F6B3 /* SegmentControlExt.swift */; };
+		171F47FF215A87F700E2F6B3 /* ImageQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */; };
+		171F4801215A8C7500E2F6B3 /* TextQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */; };
+		171F4805215AC2DE00E2F6B3 /* QuestionDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F4804215AC2DE00E2F6B3 /* QuestionDataService.swift */; };
 		1720538E215A635800E34884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538D215A635800E34884 /* AppDelegate.swift */; };
 		17205390215A635800E34884 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538F215A635800E34884 /* HomeVC.swift */; };
 		17205393215A635800E34884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17205391215A635800E34884 /* Main.storyboard */; };
@@ -15,9 +22,17 @@
 		172053A5215A692400E34884 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A4215A692400E34884 /* Category.swift */; };
 		172053A8215A6B0200E34884 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A7215A6B0200E34884 /* DataService.swift */; };
 		172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A9215A6DE700E34884 /* CategoryCell.swift */; };
+		B30FB6B9ED298A83980596C0 /* Pods_RTO_App_Professionally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4A9D6147E6270CC5154533 /* Pods_RTO_App_Professionally.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestion.swift; sourceTree = "<group>"; };
+		171F47F8215A7B2300E2F6B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		171F47FC215A856D00E2F6B3 /* SegmentControlExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlExt.swift; sourceTree = "<group>"; };
+		171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestion.swift; sourceTree = "<group>"; };
+		171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestionCell.swift; sourceTree = "<group>"; };
+		171F4804215AC2DE00E2F6B3 /* QuestionDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataService.swift; sourceTree = "<group>"; };
 		1720538A215A635700E34884 /* RTO App Professionally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTO App Professionally.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1720538D215A635800E34884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1720538F215A635800E34884 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -28,6 +43,9 @@
 		172053A4215A692400E34884 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		172053A7215A6B0200E34884 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		172053A9215A6DE700E34884 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		3E67B6B53FAAA37BC8658997 /* Pods-RTO App Professionally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTO App Professionally.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally.release.xcconfig"; sourceTree = "<group>"; };
+		6AF0303FFDE83E46AA7B9302 /* Pods-RTO App Professionally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTO App Professionally.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4A9D6147E6270CC5154533 /* Pods_RTO_App_Professionally.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTO_App_Professionally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30FB6B9ED298A83980596C0 /* Pods_RTO_App_Professionally.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B76DF3EE774A50544A75D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E4A9D6147E6270CC5154533 /* Pods_RTO_App_Professionally.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		17205381215A635700E34884 = {
 			isa = PBXGroup;
 			children = (
 				1720538C215A635700E34884 /* RTO App Professionally */,
 				1720538B215A635700E34884 /* Products */,
+				83ADA2E85624553913B4E2CD /* Pods */,
+				07B76DF3EE774A50544A75D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				172053A4215A692400E34884 /* Category.swift */,
+				171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */,
+				171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +115,7 @@
 			children = (
 				17205391215A635800E34884 /* Main.storyboard */,
 				172053A9215A6DE700E34884 /* CategoryCell.swift */,
+				171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1720538F215A635800E34884 /* HomeVC.swift */,
+				171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +132,8 @@
 		172053A2215A638E00E34884 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				171F47F8215A7B2300E2F6B3 /* Constants.swift */,
+				171F47FC215A856D00E2F6B3 /* SegmentControlExt.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -117,8 +152,18 @@
 			isa = PBXGroup;
 			children = (
 				172053A7215A6B0200E34884 /* DataService.swift */,
+				171F4804215AC2DE00E2F6B3 /* QuestionDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		83ADA2E85624553913B4E2CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0303FFDE83E46AA7B9302 /* Pods-RTO App Professionally.debug.xcconfig */,
+				3E67B6B53FAAA37BC8658997 /* Pods-RTO App Professionally.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1720539C215A635900E34884 /* Build configuration list for PBXNativeTarget "RTO App Professionally" */;
 			buildPhases = (
+				03677BB99B8E9039F3605AA5 /* [CP] Check Pods Manifest.lock */,
 				17205386215A635700E34884 /* Sources */,
 				17205387215A635700E34884 /* Frameworks */,
 				17205388215A635700E34884 /* Resources */,
+				6463D994CB74CE95D741EE08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +234,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03677BB99B8E9039F3605AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTO App Professionally-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6463D994CB74CE95D741EE08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17205386215A635700E34884 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -196,7 +282,14 @@
 				1720538E215A635800E34884 /* AppDelegate.swift in Sources */,
 				172053A5215A692400E34884 /* Category.swift in Sources */,
 				172053A8215A6B0200E34884 /* DataService.swift in Sources */,
+				171F47FB215A7D1600E2F6B3 /* QuestionVC.swift in Sources */,
+				171F47F9215A7B2300E2F6B3 /* Constants.swift in Sources */,
+				171F47FD215A856D00E2F6B3 /* SegmentControlExt.swift in Sources */,
+				171F4805215AC2DE00E2F6B3 /* QuestionDataService.swift in Sources */,
+				171F47F7215A7AD200E2F6B3 /* TextQuestion.swift in Sources */,
+				171F4801215A8C7500E2F6B3 /* TextQuestionCell.swift in Sources */,
 				172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */,
+				171F47FF215A87F700E2F6B3 /* ImageQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +433,7 @@
 		};
 		1720539D215A635900E34884 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF0303FFDE83E46AA7B9302 /* Pods-RTO App Professionally.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +452,7 @@
 		};
 		1720539E215A635900E34884 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E67B6B53FAAA37BC8658997 /* Pods-RTO App Professionally.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
