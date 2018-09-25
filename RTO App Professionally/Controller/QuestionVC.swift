@@ -49,14 +49,13 @@ extension QuestionVC {
     
     func getTextQuestionData() {
         
-        data.getTextQuestions(url: TEXTQUESTION_URL) { (TextQuestionElement) in
+        data.getTextQuestionData(url: TEXTQUESTION_URL) { (TextQuestionElement) in
             
             self.textQuestionDataArray = TextQuestionElement
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-            
         }
         
     }

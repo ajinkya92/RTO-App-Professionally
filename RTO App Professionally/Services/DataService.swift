@@ -30,39 +30,4 @@ class DataService {
     }
     
     
-    
-    // MARK: Fetching Image Question Data
-    
-    func getImageQuestionData(url: String, completion: @escaping ImageQuestionCompletionHandler) {
-        
-        guard let url = URL(string: url) else {return}
-        
-        Alamofire.request(url).responseJSON { (response) in
-            
-            if let error = response.result.error {
-                debugPrint(error.localizedDescription)
-                completion(nil)
-                return
-            } else {
-                
-                guard let data = response.data else {return completion(nil)}
-                let jsonDecoder = JSONDecoder()
-                
-                do{
-                    let jsonData = try jsonDecoder.decode(ImageQuestion.self, from: data)
-                    completion(jsonData)
-                    return
-                } catch{
-                    debugPrint(error.localizedDescription)
-                    completion(nil)
-                    return
-                }
-            }
-            
-        }
-        
-    }
-    
-    
-    
 }

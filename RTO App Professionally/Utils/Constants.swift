@@ -17,4 +17,4 @@ let IMAGEQUESTION_URL = "http://mapi.trycatchtech.com/v1/rto/image_question_list
 // MARK: Completion Handlers
 
 typealias TextQuestionCompletionHandler = (TextQuestionElement) -> ()
-typealias ImageQuestionCompletionHandler = (ImageQuestion?) -> ()
+typealias CategoryCompletionHandler = (ImageQuestion?) -> ()
