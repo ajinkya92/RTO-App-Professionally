@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1720538E215A635800E34884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538D215A635800E34884 /* AppDelegate.swift */; };
-		17205390215A635800E34884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538F215A635800E34884 /* ViewController.swift */; };
+		17205390215A635800E34884 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720538F215A635800E34884 /* HomeVC.swift */; };
 		17205393215A635800E34884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17205391215A635800E34884 /* Main.storyboard */; };
 		17205395215A635900E34884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17205394215A635900E34884 /* Assets.xcassets */; };
 		17205398215A635900E34884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17205396215A635900E34884 /* LaunchScreen.storyboard */; };
+		172053A5215A692400E34884 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A4215A692400E34884 /* Category.swift */; };
+		172053A8215A6B0200E34884 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A7215A6B0200E34884 /* DataService.swift */; };
+		172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A9215A6DE700E34884 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1720538A215A635700E34884 /* RTO App Professionally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RTO App Professionally.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1720538D215A635800E34884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1720538F215A635800E34884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1720538F215A635800E34884 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		17205392215A635800E34884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17205394215A635900E34884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17205397215A635900E34884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17205399215A635900E34884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172053A4215A692400E34884 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		172053A7215A6B0200E34884 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		172053A9215A6DE700E34884 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		1720538C215A635700E34884 /* RTO App Professionally */ = {
 			isa = PBXGroup;
 			children = (
-				1720538D215A635800E34884 /* AppDelegate.swift */,
-				1720538F215A635800E34884 /* ViewController.swift */,
-				17205391215A635800E34884 /* Main.storyboard */,
-				17205394215A635900E34884 /* Assets.xcassets */,
-				17205396215A635900E34884 /* LaunchScreen.storyboard */,
+				172053A6215A6AC200E34884 /* Services */,
+				172053A3215A639700E34884 /* Supporting Files */,
+				172053A2215A638E00E34884 /* Utils */,
+				172053A1215A638300E34884 /* Controller */,
+				172053A0215A637D00E34884 /* View */,
+				1720539F215A637100E34884 /* Model */,
 				17205399215A635900E34884 /* Info.plist */,
 			);
 			path = "RTO App Professionally";
+			sourceTree = "<group>";
+		};
+		1720539F215A637100E34884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				172053A4215A692400E34884 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		172053A0215A637D00E34884 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17205391215A635800E34884 /* Main.storyboard */,
+				172053A9215A6DE700E34884 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		172053A1215A638300E34884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1720538F215A635800E34884 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		172053A2215A638E00E34884 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		172053A3215A639700E34884 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1720538D215A635800E34884 /* AppDelegate.swift */,
+				17205394215A635900E34884 /* Assets.xcassets */,
+				17205396215A635900E34884 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		172053A6215A6AC200E34884 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				172053A7215A6B0200E34884 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17205390215A635800E34884 /* ViewController.swift in Sources */,
+				17205390215A635800E34884 /* HomeVC.swift in Sources */,
 				1720538E215A635800E34884 /* AppDelegate.swift in Sources */,
+				172053A5215A692400E34884 /* Category.swift in Sources */,
+				172053A8215A6B0200E34884 /* DataService.swift in Sources */,
+				172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
