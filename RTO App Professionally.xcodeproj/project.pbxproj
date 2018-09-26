@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171F11A3215B691400C2B143 /* PracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F11A2215B691400C2B143 /* PracticeVC.swift */; };
+		171F11A5215B697300C2B143 /* PracticeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F11A4215B697300C2B143 /* PracticeCollectionCell.swift */; };
+		171F11A7215B6B2100C2B143 /* PracticeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F11A6215B6B2100C2B143 /* PracticeTableCell.swift */; };
+		171F11A9215B6F6A00C2B143 /* PracticeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F11A8215B6F6A00C2B143 /* PracticeDataService.swift */; };
+		171F11AB215B6FC400C2B143 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F11AA215B6FC400C2B143 /* Practice.swift */; };
 		171F47F7215A7AD200E2F6B3 /* TextQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */; };
 		171F47F9215A7B2300E2F6B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47F8215A7B2300E2F6B3 /* Constants.swift */; };
 		171F47FB215A7D1600E2F6B3 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171F11A2215B691400C2B143 /* PracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeVC.swift; sourceTree = "<group>"; };
+		171F11A4215B697300C2B143 /* PracticeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCollectionCell.swift; sourceTree = "<group>"; };
+		171F11A6215B6B2100C2B143 /* PracticeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableCell.swift; sourceTree = "<group>"; };
+		171F11A8215B6F6A00C2B143 /* PracticeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDataService.swift; sourceTree = "<group>"; };
+		171F11AA215B6FC400C2B143 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
 		171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestion.swift; sourceTree = "<group>"; };
 		171F47F8215A7B2300E2F6B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
@@ -108,6 +118,7 @@
 				172053A4215A692400E34884 /* Category.swift */,
 				171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */,
 				171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */,
+				171F11AA215B6FC400C2B143 /* Practice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +130,8 @@
 				172053A9215A6DE700E34884 /* CategoryCell.swift */,
 				171F4800215A8C7500E2F6B3 /* TextQuestionCell.swift */,
 				171F4808215AD5A000E2F6B3 /* ImageQuestionCell.swift */,
+				171F11A4215B697300C2B143 /* PracticeCollectionCell.swift */,
+				171F11A6215B6B2100C2B143 /* PracticeTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 			children = (
 				1720538F215A635800E34884 /* HomeVC.swift */,
 				171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */,
+				171F11A2215B691400C2B143 /* PracticeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,6 +170,7 @@
 			children = (
 				172053A7215A6B0200E34884 /* DataService.swift */,
 				171F4806215AC77A00E2F6B3 /* QuestionDataService.swift */,
+				171F11A8215B6F6A00C2B143 /* PracticeDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -283,14 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				171F11AB215B6FC400C2B143 /* Practice.swift in Sources */,
 				171F4809215AD5A000E2F6B3 /* ImageQuestionCell.swift in Sources */,
 				17205390215A635800E34884 /* HomeVC.swift in Sources */,
 				1720538E215A635800E34884 /* AppDelegate.swift in Sources */,
+				171F11A3215B691400C2B143 /* PracticeVC.swift in Sources */,
+				171F11A9215B6F6A00C2B143 /* PracticeDataService.swift in Sources */,
 				172053A5215A692400E34884 /* Category.swift in Sources */,
+				171F11A7215B6B2100C2B143 /* PracticeTableCell.swift in Sources */,
 				171F4807215AC77A00E2F6B3 /* QuestionDataService.swift in Sources */,
 				172053A8215A6B0200E34884 /* DataService.swift in Sources */,
 				171F47FB215A7D1600E2F6B3 /* QuestionVC.swift in Sources */,
 				171F47F9215A7B2300E2F6B3 /* Constants.swift in Sources */,
+				171F11A5215B697300C2B143 /* PracticeCollectionCell.swift in Sources */,
 				171F47FD215A856D00E2F6B3 /* SegmentControlExt.swift in Sources */,
 				171F47F7215A7AD200E2F6B3 /* TextQuestion.swift in Sources */,
 				171F4801215A8C7500E2F6B3 /* TextQuestionCell.swift in Sources */,
@@ -445,7 +465,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YCPFBKZL7W;
 				INFOPLIST_FILE = "RTO App Professionally/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ajinkyasonar.RTO-App-Professionally";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -461,7 +484,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YCPFBKZL7W;
 				INFOPLIST_FILE = "RTO App Professionally/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ajinkyasonar.RTO-App-Professionally";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
