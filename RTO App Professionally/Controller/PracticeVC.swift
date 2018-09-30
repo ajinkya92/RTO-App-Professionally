@@ -14,6 +14,7 @@ class PracticeVC: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
+    @IBOutlet weak var questionNumberLabel: UILabel!
     
     let data = PracticeDataService.instance
     var practiceDataArray = PracticeElement()
@@ -26,6 +27,7 @@ class PracticeVC: UIViewController {
     var selectedAnswer: Int?
     
     var createdRowIndexpath = Int()
+    var currentQuestion = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +50,11 @@ class PracticeVC: UIViewController {
         if indexpath.row >= 0 {
             
             createdRowIndexpath -= 1
+            currentQuestion -= 1
             indexpath = IndexPath(row: createdRowIndexpath, section: 0)
             collectionView.scrollToItem(at: indexpath, at: .right, animated: true)
+            questionNumberLabel.text = "\(currentQuestion)"
+            
         }
         
     }
@@ -61,8 +66,10 @@ class PracticeVC: UIViewController {
         if indexpath.row <= practiceDataArray.count - 1 {
             
             createdRowIndexpath += 1
+            currentQuestion += 1
             indexpath = IndexPath(row: createdRowIndexpath, section: 0)
             collectionView.scrollToItem(at: indexpath, at: .left, animated: true)
+            questionNumberLabel.text = "\(currentQuestion)"
             
         }
         
@@ -134,6 +141,9 @@ extension PracticeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
             
             previousButton.isHidden = cell.tableView.tag == 0 ? true : false
             nextButton.isHidden = cell.tableView.tag == practiceDataArray.count - 1 ? true : false
+            
+            currentQuestion = cell.tableView.tag + 1
+            questionNumberLabel.text = "\(currentQuestion)"
             
             return cell
             
