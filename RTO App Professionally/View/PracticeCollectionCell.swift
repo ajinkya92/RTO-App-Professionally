@@ -12,4 +12,5 @@ class PracticeCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
 }
