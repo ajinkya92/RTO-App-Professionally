@@ -29,6 +29,13 @@
 		172053A5215A692400E34884 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A4215A692400E34884 /* Category.swift */; };
 		172053A8215A6B0200E34884 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A7215A6B0200E34884 /* DataService.swift */; };
 		172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172053A9215A6DE700E34884 /* CategoryCell.swift */; };
+		17260F732161643A00811815 /* ExamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F722161643A00811815 /* ExamVC.swift */; };
+		17260F752161647900811815 /* ExamCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F742161647900811815 /* ExamCollectionCell.swift */; };
+		17260F772161676F00811815 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F762161676F00811815 /* Exam.swift */; };
+		17260F792161689200811815 /* ExamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F782161689200811815 /* ExamDataService.swift */; };
+		17260F7B21616E3F00811815 /* ExamQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F7A21616E3F00811815 /* ExamQuestionCell.swift */; };
+		17260F7D21616E8E00811815 /* ExamAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F7C21616E8E00811815 /* ExamAnswerCell.swift */; };
+		17260F7F21617FF600811815 /* GradientColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260F7E21617FF600811815 /* GradientColorView.swift */; };
 		B30FB6B9ED298A83980596C0 /* Pods_RTO_App_Professionally.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4A9D6147E6270CC5154533 /* Pods_RTO_App_Professionally.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +64,13 @@
 		172053A4215A692400E34884 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		172053A7215A6B0200E34884 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		172053A9215A6DE700E34884 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		17260F722161643A00811815 /* ExamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamVC.swift; sourceTree = "<group>"; };
+		17260F742161647900811815 /* ExamCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamCollectionCell.swift; sourceTree = "<group>"; };
+		17260F762161676F00811815 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		17260F782161689200811815 /* ExamDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDataService.swift; sourceTree = "<group>"; };
+		17260F7A21616E3F00811815 /* ExamQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamQuestionCell.swift; sourceTree = "<group>"; };
+		17260F7C21616E8E00811815 /* ExamAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamAnswerCell.swift; sourceTree = "<group>"; };
+		17260F7E21617FF600811815 /* GradientColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorView.swift; sourceTree = "<group>"; };
 		3E67B6B53FAAA37BC8658997 /* Pods-RTO App Professionally.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTO App Professionally.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally.release.xcconfig"; sourceTree = "<group>"; };
 		6AF0303FFDE83E46AA7B9302 /* Pods-RTO App Professionally.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTO App Professionally.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTO App Professionally/Pods-RTO App Professionally.debug.xcconfig"; sourceTree = "<group>"; };
 		9E4A9D6147E6270CC5154533 /* Pods_RTO_App_Professionally.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTO_App_Professionally.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +135,7 @@
 				171F47F6215A7AD200E2F6B3 /* TextQuestion.swift */,
 				171F47FE215A87F700E2F6B3 /* ImageQuestion.swift */,
 				171F11AA215B6FC400C2B143 /* Practice.swift */,
+				17260F762161676F00811815 /* Exam.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +150,10 @@
 				171F11A4215B697300C2B143 /* PracticeCollectionCell.swift */,
 				171F11AC215BC36500C2B143 /* PracticeQuestionCell.swift */,
 				171F11AE215BC38300C2B143 /* PracticeOptionCell.swift */,
+				17260F742161647900811815 /* ExamCollectionCell.swift */,
+				17260F7A21616E3F00811815 /* ExamQuestionCell.swift */,
+				17260F7C21616E8E00811815 /* ExamAnswerCell.swift */,
+				17260F7E21617FF600811815 /* GradientColorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,6 +164,7 @@
 				1720538F215A635800E34884 /* HomeVC.swift */,
 				171F47FA215A7D1600E2F6B3 /* QuestionVC.swift */,
 				171F11A2215B691400C2B143 /* PracticeVC.swift */,
+				17260F722161643A00811815 /* ExamVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +194,7 @@
 				172053A7215A6B0200E34884 /* DataService.swift */,
 				171F4806215AC77A00E2F6B3 /* QuestionDataService.swift */,
 				171F11A8215B6F6A00C2B143 /* PracticeDataService.swift */,
+				17260F782161689200811815 /* ExamDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -301,21 +322,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17260F772161676F00811815 /* Exam.swift in Sources */,
 				171F11AB215B6FC400C2B143 /* Practice.swift in Sources */,
+				17260F7F21617FF600811815 /* GradientColorView.swift in Sources */,
+				17260F7D21616E8E00811815 /* ExamAnswerCell.swift in Sources */,
 				171F4809215AD5A000E2F6B3 /* ImageQuestionCell.swift in Sources */,
 				17205390215A635800E34884 /* HomeVC.swift in Sources */,
 				1720538E215A635800E34884 /* AppDelegate.swift in Sources */,
+				17260F752161647900811815 /* ExamCollectionCell.swift in Sources */,
 				171F11A3215B691400C2B143 /* PracticeVC.swift in Sources */,
+				17260F792161689200811815 /* ExamDataService.swift in Sources */,
 				171F11A9215B6F6A00C2B143 /* PracticeDataService.swift in Sources */,
 				171F11AF215BC38300C2B143 /* PracticeOptionCell.swift in Sources */,
 				172053A5215A692400E34884 /* Category.swift in Sources */,
 				171F4807215AC77A00E2F6B3 /* QuestionDataService.swift in Sources */,
+				17260F7B21616E3F00811815 /* ExamQuestionCell.swift in Sources */,
 				172053A8215A6B0200E34884 /* DataService.swift in Sources */,
 				171F47FB215A7D1600E2F6B3 /* QuestionVC.swift in Sources */,
 				171F11AD215BC36500C2B143 /* PracticeQuestionCell.swift in Sources */,
 				171F47F9215A7B2300E2F6B3 /* Constants.swift in Sources */,
 				171F11A5215B697300C2B143 /* PracticeCollectionCell.swift in Sources */,
 				171F47FD215A856D00E2F6B3 /* SegmentControlExt.swift in Sources */,
+				17260F732161643A00811815 /* ExamVC.swift in Sources */,
 				171F47F7215A7AD200E2F6B3 /* TextQuestion.swift in Sources */,
 				171F4801215A8C7500E2F6B3 /* TextQuestionCell.swift in Sources */,
 				172053AA215A6DE700E34884 /* CategoryCell.swift in Sources */,

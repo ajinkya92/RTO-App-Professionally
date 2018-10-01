@@ -51,6 +51,22 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            
+            let questionVC = storyboard?.instantiateViewController(withIdentifier: "QuestionVC") as! QuestionVC
+            navigationController?.pushViewController(questionVC, animated: true)
+        } else if indexPath.row == 1 {
+            
+            let practiceVC = storyboard?.instantiateViewController(withIdentifier: "PracticeVC") as! PracticeVC
+            navigationController?.pushViewController(practiceVC, animated: true)
+            
+        }
+        
+        
+    }
+    
     
 }
 
