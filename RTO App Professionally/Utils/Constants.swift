@@ -22,3 +22,8 @@ typealias TextQuestionCompletionHandler = (TextQuestionElement) -> ()
 typealias ImageQuestionCompletionHandler = (ImageQuestionElement) -> ()
 typealias PracticeCompletionHandler = (PracticeElement) -> ()
 typealias ExamCompletionHandler = (Exam?) -> ()
+
+
+//Seague Constant
+
+let UNWIND_TO_HOMEVC = "unwindToHomeVC"

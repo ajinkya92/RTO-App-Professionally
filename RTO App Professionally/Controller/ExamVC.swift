@@ -34,6 +34,8 @@ class ExamVC: UIViewController {
     var createdIndexPath = Int()
     var correctQuestionCounter = 0
     var wrongQuestionCounter = 0
+    
+    var isAnswered = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ class ExamVC: UIViewController {
         getExamData()
         startTimer()
         nextButton.isHidden = false
-        
+        questionNumberLabel.text = "1/15"
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
@@ -121,6 +123,18 @@ extension ExamVC {
     }
     
     func endTimer() {
+        
+        if !isAnswered {
+            wrongQuestionCounter += 1
+            wrongAnswerIndicatorLabel.text = "\(wrongQuestionCounter)"
+            countdownTimer.invalidate()
+        }
+        else {
+            countdownTimer.invalidate()
+        }
+        
+        
+        
         countdownTimer.invalidate()
     }
     
@@ -134,6 +148,8 @@ extension ExamVC {
     
     func changeToNextQuestion() {
         
+        nextButton.isEnabled = true
+        
         var indexpath = IndexPath(row: createdIndexPath, section: 0)
         
         if createdIndexPath < shuffeledExamData.count - 1 {
@@ -141,10 +157,31 @@ extension ExamVC {
             createdIndexPath += 1
             indexpath = IndexPath(row: createdIndexPath, section: 0)
             collectionView.scrollToItem(at: indexpath, at: .left, animated: true)
+            questionNumberLabel.text = "\(createdIndexPath + 1)/15"
         }
         else {
             nextButton.isHidden = true
-            print("Quiz Complete")
+            
+            let message = "You have Scored, " + "\(correctQuestionCounter)" + "/15"
+            let scoreAlert = UIAlertController(title: "Your Final Score", message: message, preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .default) { (action) in
+                
+                self.navigationController?.popViewController(animated: true)
+            }
+            
+            let restartAction = UIAlertAction(title: "RESTART", style: .default) { (restartAction) in
+                
+                let examVC = self.storyboard?.instantiateViewController(withIdentifier: "ExamVC") as! ExamVC
+                
+                self.navigationController?.present(examVC, animated: true, completion: nil)
+                
+            }
+            
+            scoreAlert.addAction(restartAction)
+            scoreAlert.addAction(action)
+            self.present(scoreAlert, animated: true, completion: nil)
+            
         }
         
     }
@@ -192,8 +229,6 @@ extension ExamVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
                 
                 startTimer()
             }
-            
-            
             
             return cell
         } else {
@@ -254,6 +289,8 @@ extension ExamVC: UITableViewDelegate, UITableViewDataSource {
             }
             
             tableView.allowsMultipleSelection = true
+            nextButton.isEnabled = false
+            isAnswered = false
             
             return cell
             
@@ -281,6 +318,8 @@ extension ExamVC: UITableViewDelegate, UITableViewDataSource {
             }
         
         tableView.allowsSelection = false
+        nextButton.isEnabled = true
+        isAnswered = true
         
     }
     

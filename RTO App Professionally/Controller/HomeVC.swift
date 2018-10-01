@@ -22,7 +22,6 @@ class HomeVC: UIViewController {
         
     }
 
-
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
@@ -62,6 +61,10 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             let practiceVC = storyboard?.instantiateViewController(withIdentifier: "PracticeVC") as! PracticeVC
             navigationController?.pushViewController(practiceVC, animated: true)
             
+        } else if indexPath.row == 2 {
+            
+            let examVC = storyboard?.instantiateViewController(withIdentifier: "ExamVC") as! ExamVC
+            navigationController?.pushViewController(examVC, animated: true)
         }
         
         
